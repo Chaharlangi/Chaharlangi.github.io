@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Playfair+Display:wght@500&display=swap');
+
+body {
+    background-color: #181520;
+    height: 100vh;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+
+    // nav*********************************
+    nav {
+        padding-top: 20px;
+
+        .navbar {
+            position: relative;
+            z-index: 4;
+            width: 100%;
+            height: 50px;
+            display: flex;
+
+
+            .name {
+                width: 50%;
+
+                a {
+                    color: #fff;
+                    font-size: 25px;
+                    text-decoration: none;
+                }
+            }
+
+            .link {
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 10px;
+                }
+
+                .feather {
+                    width: 24px;
+                    height: 24px;
+                    stroke: #fff;
+                    stroke-width: 2;
+                }
+            }
+        }
+    }
+
+    // header ************************************
+
+    header {
+        position: relative;
+
+        .blur-background {
+            background-color: #181520;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            .blur-item {
+                position: absolute;
+
+                &.first {
+                    width: 547px;
+                    height: 547px;
+                    left: -31px;
+                    top: -16px;
+                    background: #FE3333;
+                    border-radius: 50%;
+                    filter: blur(200px);
+                    opacity: 0.1;
+                }
+
+                &.second {
+                    width: 1208px;
+                    height: 546px;
+                    left: 10px;
+                    top: 176px;
+                    background: #FE33D1;
+                    border-radius: 50%;
+                    filter: blur(200px);
+                    opacity: 0.1;
+
+                }
+
+                &.third {
+                    width: 1249px;
+                    height: 592px;
+                    left: 699.17px;
+                    top: -281.87px;
+                    border-radius: 50%;
+                    background: #33B5FE;
+                    filter: blur(200px);
+                    opacity: 0.1;
+
+
+                }
+            }
+        }
+
+        .border-c {
+            position: absolute;
+            top: 260px;
+
+        }
+
+        .about {
+            position: absolute;
+            width: 693px;
+            left: 337px;
+            top: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .imgCover {
+                width: 270px;
+                height: 360px;
+                left: 532px;
+                top: 221px;
+                mix-blend-mode: normal;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+
+            }
+
+            .text {
+                position: absolute;
+                bottom: 60px;
+
+                h1 {
+                    font-family: PlayfairDisplay;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 65px;
+                    line-height: 80.1%;
+                    text-align: center;
+                    color: #FFFFFF;
+                    text-shadow: 0px 1px 0px #181520;
+                }
+
+                p {
+                    font-family: IBM Plex Mono;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 24px;
+                }
+            }
+
+            .link {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 16px;
+                    padding: 5px;
+                }
+
+                .feather {
+                    width: 24px;
+                    height: 24px;
+                    stroke: #fff;
+                    stroke-width: 2;
+                }
+            }
+
+            .pdf {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px;
+                position: absolute;
+                background: #F2EDFF;
+                border-radius: 50px;
+                bottom: -20px;
+
+
+                i {
+                    width: 16px;
+                    height: 16px;
+                    opacity: 0.4;
+                }
+
+                h1 {
+                    font-family: IBM Plex Mono;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 16px;
+                    margin-top: 4px;
+                    margin-left: 2px;
+                }
+            }
+
+            .project {
+                margin-top: 50px;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-family: IBM Plex Mono;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+
+                }
+            }
+        }
+
+    }
+}
+
+// myProject******************************************
+.back {
+    padding-top: 20px;
+    display: flex;
+  
+   
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 5px;
+    }
+
+    .feather {
+        color: #fff;
+    }
+}
+
+.myProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    padding-top: 50px;
+
+    .title {
+        h1 {
+            color: #fff;
+            font-size: 25px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .cardProject {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            width: 31%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 17px;
+            background: #2c2933;
+            border: none;
+            border-radius: 15px;
+
+            .cardImg {
+                height: 200px;
+                background:#23202c;
+                border-radius: 15px;
+            }
+
+            .cardTitle {
+                height: 100px;
+                padding: 20px;
+
+                h3 {
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: rgb(238, 228, 228);
+                    font-size: 12px;
+                }
+
+                a:hover {
+                    color: rgb(167, 167, 167);
+                }
+            }
+
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 1290px) {
+    .back {
+        display: none;
+    }
+
+    .about {
+        .link {
+            display: none !important;
+        }
+    }
+
+    .project {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1290px) {
+
+    nav {
+        display: none;
+    }
+
+    header {
+        height: 600px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: static !important;
+
+            .imgCover {
+                position: static !important;
+                width: 125px !important;
+                height: 125px !important;
+
+                img {
+                    border-radius: 50% !important;
+                    object-fit: cover;
+                }
+            }
+
+            .text {
+                position: static !important;
+
+                h1 {
+                    font-size: 30px !important;
+                    padding-top: 35px;
+                }
+
+                p {
+                    font-size: 16px !important;
+                    padding-top: 16px;
+                }
+            }
+
+            .link {
+                padding: 0 0 10px 10px;
+            }
+
+            .pdf {
+                position: static !important;
+                margin-top: 80px;
+
+            }
+        }
+
+        .border-c {
+            display: none;
+        }
+
+        .blur-background {
+            display: none;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .myProject {
+        height: auto;
+
+        .title {
+            h1 {
+                font-size: 24px;
+            }
+
+        }
+
+        .cardProject {
+            justify-content: center;
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Playfair+Display:wght@500&display=swap");
+body {
+  background-color: #181520;
+  height: 100vh;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Playfair Display', serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body nav {
+  padding-top: 20px;
+}
+
+body nav .navbar {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body nav .navbar .name {
+  width: 50%;
+}
+
+body nav .navbar .name a {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+body nav .navbar .link {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body nav .navbar .link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}
+
+body nav .navbar .link .feather {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+body header {
+  position: relative;
+}
+
+body header .blur-background {
+  background-color: #181520;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body header .blur-background .blur-item {
+  position: absolute;
+}
+
+body header .blur-background .blur-item.first {
+  width: 547px;
+  height: 547px;
+  left: -31px;
+  top: -16px;
+  background: #FE3333;
+  border-radius: 50%;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  opacity: 0.1;
+}
+
+body header .blur-background .blur-item.second {
+  width: 1208px;
+  height: 546px;
+  left: 10px;
+  top: 176px;
+  background: #FE33D1;
+  border-radius: 50%;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  opacity: 0.1;
+}
+
+body header .blur-background .blur-item.third {
+  width: 1249px;
+  height: 592px;
+  left: 699.17px;
+  top: -281.87px;
+  border-radius: 50%;
+  background: #33B5FE;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  opacity: 0.1;
+}
+
+body header .border-c {
+  position: absolute;
+  top: 260px;
+}
+
+body header .about {
+  position: absolute;
+  width: 693px;
+  left: 337px;
+  top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .about .imgCover {
+  width: 270px;
+  height: 360px;
+  left: 532px;
+  top: 221px;
+  mix-blend-mode: normal;
+}
+
+body header .about .imgCover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+
+body header .about .text {
+  position: absolute;
+  bottom: 60px;
+}
+
+body header .about .text h1 {
+  font-family: PlayfairDisplay;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 65px;
+  line-height: 80.1%;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 0px #181520;
+}
+
+body header .about .text p {
+  font-family: IBM Plex Mono;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+body header .about .link {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .about .link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+}
+
+body header .about .link .feather {
+  width: 24px;
+  height: 24px;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+body header .about .pdf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  position: absolute;
+  background: #F2EDFF;
+  border-radius: 50px;
+  bottom: -20px;
+}
+
+body header .about .pdf i {
+  width: 16px;
+  height: 16px;
+  opacity: 0.4;
+}
+
+body header .about .pdf h1 {
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+
+body header .about .project {
+  margin-top: 50px;
+}
+
+body header .about .project a {
+  text-decoration: none;
+  color: #fff;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.back {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.back a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.back .feather {
+  color: #fff;
+}
+
+.myProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  padding-top: 50px;
+}
+
+.myProject .title h1 {
+  color: #fff;
+  font-size: 25px;
+  padding-bottom: 40px;
+}
+
+.myProject .cardProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.myProject .cardProject .card {
+  width: 31%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 17px;
+  background: #2c2933;
+  border: none;
+  border-radius: 15px;
+}
+
+.myProject .cardProject .card .cardImg {
+  height: 200px;
+  background: #23202c;
+  border-radius: 15px;
+}
+
+.myProject .cardProject .card .cardTitle {
+  height: 100px;
+  padding: 20px;
+}
+
+.myProject .cardProject .card .cardTitle h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.myProject .cardProject .card .cardTitle a {
+  text-decoration: none;
+  color: #eee4e4;
+  font-size: 12px;
+}
+
+.myProject .cardProject .card .cardTitle a:hover {
+  color: #a7a7a7;
+}
+
+@media only screen and (min-width: 1290px) {
+  .back {
+    display: none;
+  }
+  .about .link {
+    display: none !important;
+  }
+  .project {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1290px) {
+  nav {
+    display: none;
+  }
+  header {
+    height: 600px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static !important;
+  }
+  header .about .imgCover {
+    position: static !important;
+    width: 125px !important;
+    height: 125px !important;
+  }
+  header .about .imgCover img {
+    border-radius: 50% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  header .about .text {
+    position: static !important;
+  }
+  header .about .text h1 {
+    font-size: 30px !important;
+    padding-top: 35px;
+  }
+  header .about .text p {
+    font-size: 16px !important;
+    padding-top: 16px;
+  }
+  header .about .link {
+    padding: 0 0 10px 10px;
+  }
+  header .about .pdf {
+    position: static !important;
+    margin-top: 80px;
+  }
+  header .border-c {
+    display: none;
+  }
+  header .blur-background {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .myProject {
+    height: auto;
+  }
+  .myProject .title h1 {
+    font-size: 24px;
+  }
+  .myProject .cardProject {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .myProject .cardProject .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
