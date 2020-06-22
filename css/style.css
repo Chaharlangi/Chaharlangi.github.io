@@ -201,19 +201,22 @@ body header .about .pdf {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px;
   position: absolute;
   background: #F2EDFF;
   border-radius: 50px;
   bottom: -20px;
+  text-decoration: none;
 }
 
-body header .about .pdf i {
+body header .about .pdf .feather {
+  color: #000;
   width: 16px;
   height: 16px;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 body header .about .pdf h1 {
@@ -224,7 +227,6 @@ body header .about .pdf h1 {
   text-decoration: none;
   color: #000;
   font-size: 16px;
-  margin-top: 4px;
   margin-left: 2px;
 }
 
@@ -279,20 +281,26 @@ body header .about .project a {
   padding-bottom: 40px;
 }
 
-.myProject .cardProject {
+.myProject .cardblog {
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.myProject .cardProject .card {
+.myProject .cardblog a {
+  text-decoration: none;
   width: 31%;
+  height: 300px;
+}
+
+.myProject .cardblog a .card {
+  border-radius: 15px;
+  background: #1d1a24;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,36 +308,35 @@ body header .about .project a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 17px;
-  background: #2c2933;
-  border: none;
-  border-radius: 15px;
 }
 
-.myProject .cardProject .card .cardImg {
+.myProject .cardblog a .card .cardImg {
+  width: 100%;
   height: 200px;
-  background: #23202c;
+  background: #211f27;
   border-radius: 15px;
 }
 
-.myProject .cardProject .card .cardTitle {
+.myProject .cardblog a .card .cardTitle {
+  width: 100%;
   height: 100px;
-  padding: 20px;
+  padding: 10px;
 }
 
-.myProject .cardProject .card .cardTitle h3 {
+.myProject .cardblog a .card .cardTitle h3 {
   color: #fff;
   font-size: 20px;
+  font-family: PlayfairDisplay;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.myProject .cardProject .card .cardTitle a {
+.myProject .cardblog a .card .cardTitle p {
+  font-family: IBM Plex Mono;
+  font-style: normal;
   text-decoration: none;
   color: #eee4e4;
   font-size: 12px;
-}
-
-.myProject .cardProject .card .cardTitle a:hover {
-  color: #a7a7a7;
 }
 
 @media only screen and (min-width: 1290px) {
@@ -419,7 +426,7 @@ body header .about .project a {
   .myProject .title h1 {
     font-size: 24px;
   }
-  .myProject .cardProject {
+  .myProject .cardblog {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -427,8 +434,9 @@ body header .about .project a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
-  .myProject .cardProject .card {
+  .myProject .cardblog a {
     width: 100%;
     margin-bottom: 15px;
   }
