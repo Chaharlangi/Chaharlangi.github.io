@@ -27,6 +27,9 @@ body nav .navbar .name {
 }
 
 body nav .navbar .name a {
+  font-family: PlayfairDisplay;
+  font-weight: normal;
+  font-size: 24px;
   color: #fff;
   font-size: 25px;
   text-decoration: none;
@@ -43,6 +46,10 @@ body nav .navbar .link {
 }
 
 body nav .navbar .link a {
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
   text-decoration: none;
   color: #fff;
   font-size: 16px;
@@ -168,6 +175,7 @@ body header .about .text h1 {
 
 body header .about .text p {
   font-family: IBM Plex Mono;
+  font-weight: lighter !important;
   color: #fff;
   text-align: center;
   font-size: 24px;
@@ -251,6 +259,10 @@ body header .about .project a {
 }
 
 .back a {
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
   color: #fff;
   text-decoration: none;
   margin-left: 5px;
@@ -276,6 +288,10 @@ body header .about .project a {
 }
 
 .myProject .title h1 {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
   color: #fff;
   font-size: 25px;
   padding-bottom: 40px;
@@ -325,17 +341,18 @@ body header .about .project a {
 
 .myProject .cardblog a .card .cardTitle h3 {
   color: #fff;
-  font-size: 20px;
-  font-family: PlayfairDisplay;
+  font-family: Playfair Display;
   font-style: normal;
   font-weight: normal;
+  font-size: 18px;
+  padding-top: 10px;
 }
 
 .myProject .cardblog a .card .cardTitle p {
   font-family: IBM Plex Mono;
   font-style: normal;
   text-decoration: none;
-  color: #eee4e4;
+  color: #8a8686;
   font-size: 12px;
 }
 
